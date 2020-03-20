@@ -1,0 +1,29 @@
+*{
+    background-color: #f4f5ff;
+    display: block;
+    text-align: center;
+}
+
+footer{
+    background-color: #4a4a4a;
+    font-family: Arial;
+    font-size: 18em;
+}
+
+footer h3{
+    font-size: 22em;
+}
+
+h1{
+    font-size: 48em;
+    color: #c24595;
+}
+
+h2{
+    font-size: 36em;
+}
+
+nav{
+    font-family: "Matura MT Script Capit";
+    color: white;
+}
