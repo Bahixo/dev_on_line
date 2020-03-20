@@ -2,11 +2,11 @@
     background-color: #f4f5ff;
     display: block;
     text-align: center;
+    font-family: Arial;
 }
 
 footer{
     background-color: #4a4a4a;
-    font-family: Arial;
     font-size: 18em;
 }
 
