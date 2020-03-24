@@ -11,8 +11,9 @@
     <body>
 
 
-        <!-- Services & prices area-->
+        <!-- Services & prices AND localisation area-->
         <section id="services_and_localisation">
+            <!-- services & prices sub-area-->
             <article id="services">
                 <h2>£. Services & prices</h2>
                 <div class="card">
@@ -23,52 +24,58 @@
                     </p>
                     <p>£. According to estimate</p>
                 </div>
-
                 <div class="card">
                     <h3>Shooting in London</h3>
                     <p>200 £ by hour</p>
                 </div>
-
                 <div class="card">
                     <h3>Event in England</h3>
                     <p>700 £ by half-day</p>
                 </div>
             </article>
 
-
+            <!-- localisation sub-area-->
             <article id="localisation">
                 <h2>Localisation</h2>
                 <a>38 Mount Pleasant, Holborn, London WC1X 0AN, United Kingdom</a>
                 <img src="src/map.PNG" alt="GPS area">
             </article>
-
-
         </section>
             
+        <!-- contact area-->
         <section id="contact">
             <h2>One project ? Contact me</h2>
+            <!-- form sub-area-->
             <div id="form_area">
+                <form method="post" action="traitement.php">
+                    <!-- name, email and comment areas -->
+                    <p><input type="text" name="viewver-name" id="viewver-name" placeholder="my name" size="30" maxlength="15" required/></p>
+                    <p><input type="email" name="viewver-mail" id="viewver-mail" placeholder="my@email" size="30" maxlength="40" required/></p>
+                    <p><textarea name="comment-area" id="comment-area" placeholder="Comment here" cols="60" rows="20" required></textarea></p>
+                    <input type="submit" value="Submit"/>
+                </form>
             </div>
 
+            <!-- addresses & social medias sub-area-->
             <div id="adress_and_social_media">
-                <div>
+                <div> <!-- clickable mail -->
                     <img src="src/at.png" alt="mail logo">
                     <a href="mailto:anna.smith-photography.gmail.com"> anna.smith-photography.gmail.com </a>
                 </div>
-
-                <div>
+                <div> <!-- clickable tel-->
                     <img src="src/phone_record.png" alt="phone logo">
                     <a href="tel:0675443218">06. 75. 44. 32. 18</a>
                 </div>
-                <div>
+                <div> <!-- Social medias logos all clickable-->
                     <img src="src/thumbs_up.png" alt="thumbs up logo">
-                    <img src="src/instagram.png" alt="instagram logo">
-                    <img src="src/twitter.png" alt="tweeter logo">
-                    <img src="src/facebook.png" alt="facebook logo">
-                    <img src="src/linkedin.png" alt="linkedIn logo">
+                    <a href="#"><img src="src/instagram.png" alt="instagram logo"></a>
+                    <a href="#"><img src="src/twitter.png" alt="tweeter logo"></a>
+                    <a href="#"><img src="src/facebook.png" alt="facebook logo"></a>
+                    <a href="#"><img src="src/linkedin.png" alt="linkedIn logo"></a>
                 </div>
             </div>
         </section>
+
 
     </body>
 </html>
