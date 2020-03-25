@@ -1,8 +1,8 @@
 Liste des Polices d'écriture:
-    -Matura MT Script Capit
-    -Forte(Photoshop)
+    -Mark Script
+    -Merienda(bold)
     -Arial
-    -Lucida Handwriting
+    -Merienda
 
 Liste des codes Couleur:
     -Bleu:          #7aa6cf 

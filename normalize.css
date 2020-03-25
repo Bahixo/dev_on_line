@@ -1,29 +1,33 @@
-*{
-    background-color: #f4f5ff;
+body, body *{
+    background-color: #f8f8f8;
     display: block;
     text-align: center;
     font-family: Arial;
+    margin: 0;
+    padding: 0;
 }
 
 footer{
     background-color: #4a4a4a;
-    font-size: 18em;
+    font-size: 18px;
 }
 
 footer h3{
-    font-size: 22em;
+    font-size: 22px;
 }
 
 h1{
-    font-size: 48em;
+    font-family: 'Merienda', cursive;
+    font-size: 48px;
     color: #c24595;
 }
 
 h2{
-    font-size: 36em;
+    font-family: 'Merienda', cursive;
+    font-size: 36px;
 }
 
 nav{
-    font-family: "Matura MT Script Capit";
+    font-family: "Marck Script", cursive;
     color: white;
 }
