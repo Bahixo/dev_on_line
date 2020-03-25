@@ -1,0 +1,37 @@
+#container-card {
+    width: 70%;
+    height: 480px;
+    margin: 60px auto;
+
+    /*initialisation de display flex pour la mise en forme/disposition aisée des 'card' */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* création du modèle visuel commun à chaque carte*/
+.card {
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    border: 5px solid #7aa6cf;
+    border-radius: 15px;
+    font-size: 1.8em;
+
+    /*initialisation de display flex pour la mise en forme/disposition aisée du texte à l'intérieur de chaque 'card' */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* taille spécifique pour la première carte */
+#card1 {
+    height: 180px;
+}
+
+/* lien "library" */
+.card a { 
+    display: initial; /* réinitialise le display block pour que le lien soit à la suite du texte */
+    text-decoration: none;
+    color: #c24595;
+}
