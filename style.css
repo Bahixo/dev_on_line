@@ -61,18 +61,52 @@
     border: 2px solid black;
 }
 
-
-
 /*--------------Section Contact Me ------------------*/
 /*--------------Sub-section Form ------------------*/
 
 #contact h3 {
     font-family: 'Brush Script MT','Merienda', 'Arial';
-    font-size: 2.5em;
+    font-size: 2.8em;
+    margin: 20px auto;
 }
 
+/* propriété générale de formulaires */
+#viewver-name, #viewver-mail, #comment-area {
+    margin-left: 5%;
+    margin-top: 10px;
+    border: 5px solid #57555b;
+    border-radius: 10px;
 
-#viewver-name {
+    font-size: 1.8em;
+    text-align: left;
+    padding-left: 2.5%;
+    box-sizing: border-box;
+}
+
+/* propriétés exclusives aux formulaires 'name' et 'e-mail' */
+#viewver-name, #viewver-mail {
+    width: 50%;
+    height: 60px;
+}
+
+/* propriétés exclusives au formulaire 'comments' */
+#comment-area {
     width: 90%;
-    height: 50px;
+    height: 180px;
+    margin-top: 30px; /* extra margin */
+}
+
+#submit-button {
+    width: 15%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding: 10px;
+    border: 3px solid #c24595;
+    border-radius: 10px;
+
+    font-size: 1.8em;
+    background-color: #7aa6cf;
+    color: white;
 }
