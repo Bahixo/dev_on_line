@@ -110,3 +110,47 @@
     background-color: #7aa6cf;
     color: white;
 }
+
+/*--------------Sub-section addresses & social medias ------------------*/
+
+.address-container, #thumbs-and-social-media-container {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.address-container a {
+    font-size: 1.8em;
+    margin-left: 5%;
+    
+    position: relative;
+    top: 10px;
+
+    color: black;
+    text-decoration: none;
+}
+
+/* ajustement de la taille des logos mail, tel et thumbs*/
+.small-logo {
+    width: 50px;
+    height: auto;
+    margin-left: 5%;
+}
+
+/* ajustement de la taille du lien des logos de réseaux-sociaux */
+.link-logo {
+    width: 25px;
+}
+
+/* mise en forme des logos de réseaux-sociaux via flex*/
+#social-media-container {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+/* adaptation taille des logos de réseaux-sociaux après réduction du conteneur de ces logos */
+.social-media-logo {
+    width: 200%;
+}
+
