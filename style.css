@@ -60,3 +60,19 @@
     margin: 0 auto 60px; /* haut - gauche & droite - bas */
     border: 2px solid black;
 }
+
+
+
+/*--------------Section Contact Me ------------------*/
+/*--------------Sub-section Form ------------------*/
+
+#contact h3 {
+    font-family: 'Brush Script MT','Merienda', 'Arial';
+    font-size: 2.5em;
+}
+
+
+#viewver-name {
+    width: 90%;
+    height: 50px;
+}
