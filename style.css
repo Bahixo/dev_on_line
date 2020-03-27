@@ -15,7 +15,7 @@
     height: 120px;
     margin: 0 auto;
     border: 5px solid #7aa6cf;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 1.8em;
 
     /*initialisation de display flex pour la mise en forme/disposition aisée du texte à l'intérieur de chaque 'card' */
@@ -59,6 +59,7 @@
     width: 100%;
     margin: 0 auto 60px; /* haut - gauche & droite - bas */
     border: 2px solid black;
+    border-radius: 25px;
 }
 
 /*--------------Section Contact Me ------------------*/
@@ -74,7 +75,7 @@
 #viewver-name, #viewver-mail, #comment-area {
     margin-left: 5%;
     margin-top: 10px;
-    border: 5px solid #57555b;
+    border: 3px solid #57555b;
     border-radius: 10px;
 
     font-size: 1.8em;
