@@ -1,0 +1,29 @@
+article{
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+aside{
+	width: 90%;
+	margin: auto;
+	background-color: #ceecfd;
+}
+
+aside h2{
+	background-color: #ceecfd;
+}
+
+aside p{
+	background-color: #ceecfd;
+}
+
+p{
+	margin-top: 30px;
+	text-align: justify;
+	font-size: 1em
+}
+
+h2{
+	margin-top: 30px;
+}
