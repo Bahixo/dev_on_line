@@ -71,6 +71,10 @@
 
 /*--------------Section Contact Me ------------------*/
 /*--------------Sub-section Form ------------------*/
+#contact {
+    margin-bottom: 60px;
+}
+
 
 #contact h3 {
     font-family: 'Brush Script MT','Merienda', 'Arial';
@@ -170,7 +174,48 @@
     width: 200%;
 }
 
+/*-------------- Footer ------------------*/
 
+footer *{
+    background-color: #4a4a4a;
+    color: white;
+    font-family: 'Arial';
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 100%;
+    min-width: 640px;
+}
+
+footer div {
+    width: 28%;
+    margin-bottom: 20px;
+}
+
+footer div:first-child {
+    width: 35%;
+    margin-left: 2%;
+}
+
+footer div:nth-child(2) {
+    margin-left: 2%;
+}
+
+footer h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+footer p {
+    text-align: left;
+    line-height: 1.8em;
+}
 
 
 @media all and (min-width: 768px) {
