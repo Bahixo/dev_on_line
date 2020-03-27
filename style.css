@@ -176,17 +176,18 @@
 
 /*-------------- Footer ------------------*/
 
+/*application du background, de la couleur de texte et de la police 'Arial' pour l'ensemble des éléments du footer */
 footer *{
     background-color: #4a4a4a;
     color: white;
     font-family: 'Arial';
 }
 
+/* gestion de la disposition des éléments du footer via display */
 footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
     width: 100%;
     min-width: 640px;
 }
@@ -196,11 +197,13 @@ footer div {
     margin-bottom: 20px;
 }
 
+/* ajustement spécifique du premier block du footer 'About photography' */
 footer div:first-child {
     width: 35%;
     margin-left: 2%;
 }
 
+/* ajustement spécifique du second block du footer 'Services' */
 footer div:nth-child(2) {
     margin-left: 2%;
 }
@@ -212,10 +215,20 @@ footer h2 {
     font-size: 1.3em;
 }
 
+/* Gestion de l'alignement à gauche directement via les paragraphes */
 footer p {
     text-align: left;
     line-height: 1.8em;
 }
+
+/* remise en display intial (normalize - display : block) des liens pour pouvoir rendre effectif le positionnement à gauche */ 
+footer a {
+    display: initial;
+    text-decoration: none;
+}
+
+
+
 
 
 @media all and (min-width: 768px) {
