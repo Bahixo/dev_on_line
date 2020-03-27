@@ -1,3 +1,7 @@
+#services_and_localisation h2, #contact h2, #contact h3 {
+    min-width: 550px;
+}
+
 #container-card {
     width: 70%;
     height: 480px;
@@ -12,6 +16,7 @@
 /* création du modèle visuel commun à chaque carte*/
 .card {
     width: 100%;
+    min-width: 450px;
     height: 120px;
     margin: 0 auto;
     border: 5px solid #7aa6cf;
@@ -42,6 +47,7 @@
 #localisation #address-text {
     font-size: 1.6em;
     width: 60%;
+    min-width: 500px;
     margin: 30px auto;
     color: #6c6c6e;
     text-decoration: none;
@@ -50,6 +56,7 @@
 /*lien de l'image GPS */
 #localisation a {
     width: 65%;
+    min-width: 500px;
     margin: 0 auto;
     padding: 0; 
 }
@@ -87,18 +94,21 @@
 /* propriétés exclusives aux formulaires 'name' et 'e-mail' */
 #viewver-name, #viewver-mail {
     width: 50%;
+    min-width: 400px;
     height: 60px;
 }
 
 /* propriétés exclusives au formulaire 'comments' */
 #comment-area {
     width: 90%;
+    min-width: 500px;
     height: 180px;
     margin-top: 30px; /* extra margin */
 }
 
 #submit-button {
     width: 15%;
+    min-width: 130px;
     height: auto;
     margin-left: 5%;
     margin-top: 30px;
@@ -113,6 +123,10 @@
 }
 
 /*--------------Sub-section addresses & social medias ------------------*/
+
+#adress_and_social_media {
+    min-width: 600px;
+}
 
 .address-container, #thumbs-and-social-media-container {
     display: flex;
@@ -148,10 +162,18 @@
     display: flex;
     justify-content: space-around;
     width: 50%;
+    min-width: 300px;
 }
 
 /* adaptation taille des logos de réseaux-sociaux après réduction du conteneur de ces logos */
 .social-media-logo {
     width: 200%;
+}
+
+
+
+
+@media all and (min-width: 768px) {
+    
 }
 
