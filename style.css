@@ -1,5 +1,5 @@
 #servicesAndLocalisation h2, #contact h2, #contact h3 {
-    min-width: 550px;
+    min-width: 350px;
 }
 
 #containerCard {
@@ -68,6 +68,66 @@
     border: 2px solid black;
     border-radius: 25px;
 }
+
+@media all and (max-width: 400px) {
+    #servicesAndLocalisation *, #contact * {
+        margin-left: 10px;
+    }
+}
+
+    /* TEST START FOR NORMALIZE */ 
+@media all and (min-width: 768px) and (min-device-width : 500px) {
+    
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}  /* TEST END FOR NORMALIZE */
+    
+@media all and (min-width: 768px) and (min-device-width : 500px) {
+    /* redimentionnement valeurs minimales pour tout élément de la section 'services & localisation' */
+    #servicesAndLocalisation *{
+        min-width: 200px;
+    }
+
+    /* passage en display : inline-block pour mise cote à cote des deux sous-sections 'services' & 'localisation' */
+    #services, #localisation {
+        display: inline-block;
+        vertical-align: top; /* alignement vertical en partant du haut de l'écran */
+        width: 49%; /* nouveau dimentionnement */
+    }
+
+    /*redimentionnement taille des titres */
+    #servicesAndLocalisation h2, #localisation h3, #contact h2, #contact h3{
+        font-size: 1.8em;
+    }
+
+    /* réduction de la marge du conteneur des 'card's */
+    #containerCard {
+        margin-top: 30px;
+    }
+
+    /* redimentionnement largeur et taille du contenu des 'card's */
+    .card {
+        width: 100%;
+        font-size: 1.4em;
+    }
+
+    /* redimentionnement taille de l'adresse */
+    #localisation #addressText {
+        font-size: 1.3em;
+        min-width: 200px;
+        width: 80%;
+    }
+
+    /* redimentionnement taille de l'image GPS */
+    #localisation a {
+        width: 80%;
+        min-width: 350px;
+    }
+}
+
+
 
 /*--------------Section Contact Me ------------------*/
 /*--------------Sub-section Form ------------------*/
