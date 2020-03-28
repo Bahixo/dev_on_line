@@ -1,3 +1,12 @@
+ /* TEST START FOR NORMALIZE */ 
+ @media all and (min-width: 768px) and (min-device-width : 500px) {
+    
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}  /* TEST END FOR NORMALIZE */
+
 #servicesAndLocalisation h2, #contact h2, #contact h3 {
     min-width: 350px;
 }
@@ -69,21 +78,14 @@
     border-radius: 25px;
 }
 
+/* uniquement quand la fenêtre d'un navigateur est inférieure à 400px */
 @media all and (max-width: 400px) {
     #servicesAndLocalisation *, #contact * {
         margin-left: 10px;
     }
 }
-
-    /* TEST START FOR NORMALIZE */ 
-@media all and (min-width: 768px) and (min-device-width : 500px) {
     
-    body {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-}  /* TEST END FOR NORMALIZE */
-    
+/* règles applicables pour tablettes & desktop pour la section 'services & localisation */
 @media all and (min-width: 768px) and (min-device-width : 500px) {
     /* redimentionnement valeurs minimales pour tout élément de la section 'services & localisation' */
     #servicesAndLocalisation *{
@@ -98,13 +100,19 @@
     }
 
     /*redimentionnement taille des titres */
-    #servicesAndLocalisation h2, #localisation h3, #contact h2, #contact h3{
-        font-size: 1.8em;
+    #servicesAndLocalisation h2 {
+        font-size: 1.8em; 
+    }
+
+    #services h2 {
+        text-align: left;
+        margin-left: 10%;
     }
 
     /* réduction de la marge du conteneur des 'card's */
     #containerCard {
         margin-top: 30px;
+        margin-left: 15px;
     }
 
     /* redimentionnement largeur et taille du contenu des 'card's */
@@ -143,7 +151,7 @@
 }
 
 /* propriété générale de formulaires */
-#viewverName, #viewverMail, #commentArea {
+#viewerName, #viewerMail, #commentArea {
     margin-left: 5%;
     margin-top: 10px;
     border: 3px solid #57555b;
@@ -156,7 +164,7 @@
 }
 
 /* propriétés exclusives aux formulaires 'name' et 'e-mail' */
-#viewverName, #viewverMail {
+#viewerName, #viewerMail {
     width: 50%;
     min-width: 400px;
     height: 60px;
@@ -176,7 +184,7 @@
     height: auto;
     margin-left: 5%;
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     padding: 10px;
     border: 3px solid #c24595;
     border-radius: 10px;
@@ -234,6 +242,73 @@
     width: 200%;
 }
 
+@media all and (min-width: 768px) and (min-device-width : 500px) {
+    
+    /* redimentionnement des tailles des titres */
+    #contact h2 {
+        font-size: 1.8em;
+        text-align: left; 
+        margin-left: 20px;
+    }
+
+    /* transformation des zones de commentaires en inline block pour mise en page cote à cote */
+    #nameAndMailForm, #commentArea {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #viewerName, #viewerMail, #commentArea {
+        min-width: 200px;
+        margin-left: 0;
+        margin-top: 0;
+        font-size: 1.4em;
+        padding-top: 8px;
+    }
+
+    /* redimentionnement taille des formulaires name & mail */
+    #viewerName, #viewerMail {
+        width: 90%;
+        margin-left: 20px;
+        
+    }
+
+    #viewerMail {
+        margin-top: 10px;
+    }
+
+    #nameAndMailForm {
+        width: 30%;
+    }
+
+    #commentArea {
+        width: 69%;
+        height: 250px;
+    }
+
+    /* repositionnement du bouton submit */
+    #submitButton {
+        margin-left: 25px;
+        margin-bottom: -50px;
+        position: relative;
+        bottom: 100px;
+    }
+
+    #socialMediaContainer {
+        width: 25%;
+        min-width: 300px;
+        justify-content: space-between;
+        position: relative;
+        left: 4.7%;
+    }
+
+    /* reditionnement taille texte de l'adresse mail et du numéro de tél*/
+    .addressContainer a {
+        font-size: 1.6em;
+    }
+}
+
+
+
 /*-------------- Footer ------------------*/
 
 /*application du background, de la couleur de texte et de la police 'Arial' pour l'ensemble des éléments du footer */
@@ -286,12 +361,3 @@ footer a {
     display: initial;
     text-decoration: none;
 }
-
-
-
-
-
-@media all and (min-width: 768px) {
-
-}
-
