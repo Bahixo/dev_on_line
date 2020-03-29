@@ -7,9 +7,36 @@
         <link href="https://fonts.googleapis.com/css?family=Marck+Script|Merienda&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="normalize.css">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="js/jquery.min.js"> </script>
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
 
-    <body>   
+    <body>       
+        <header>
+            <img src="src/menu.png" id="menuPic">
+            <nav>
+                <a href="#" class="menuB" style="top: 124px;">About me</a>
+                <a href="#" class="menuB" style="top: 172px;">Portofolio</a>
+                <a href="#" class="menuB" style="top: 220px;">Services</a>
+                <a href="#" class="menuB" style="top: 268px;">Localisation</a>
+                <a href="#" class="menuB" style="top: 316px;">Contact me</a>
+            </nav>
+        </header>
+        <div id="bandLogo">
+            <img id="profilPic" src="src/The_photograph.jpg" alt="Anna Smith">
+            <img id="logo" src="src/Logo.PNG" alt="Logo d'Anna Smith">
+        </div>
+
+        <section id="slide">
+            <div></div>
+            <span id="0" id="elephant" class="activ" data-pic="url(src/elephant.jpg)"></span>
+            <span id="1" id="felin" data-pic="url(src/felin.jpg)"></span>
+            <soan id="2" id="flower" data-pic="url(src/sakura.jpg)"></soan>
+            <span id="3" id="field" data-pic="url(src/champs.jpg)"></span>
+            <span id="4" id="mountain" data-pic="url(src/mountain.jpg)"></span>
+            <span id="5" id="newyork" data-pic="url(src/new_york.jpg)"></span>
+        </section>
+ 
         <!-- Services & prices AND localisation area-->
         <section id="servicesAndLocalisation">
             <!-- services & prices sub-area-->
@@ -109,7 +136,12 @@
             </div>
         </footer>
 
-
+        <script>
+            $(document).ready(ratioSlide());
+            setInterval(sliding, 10000);
+            $("#menuPic").click(menu);
+            $(".menuB").click(menu);
+        </script> 
 
     </body>
 </html>
