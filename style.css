@@ -159,7 +159,7 @@ span{
 
     h1{
         text-align: left;
-        padding-left: 20px;
+        padding-left: 4%;
         padding-bottom: 30px;
         font-size: 3em;
         min-width: 800px;
@@ -186,11 +186,11 @@ span{
     }
 
     #presentation article {
-    width: 66%; 
+    width: 62%; 
     }
 
     #presentation aside{
-    width: 33%; 
+    width: 31%; 
     }
 
     #presentation p {
@@ -200,7 +200,7 @@ span{
 
 /*--------------------------------------------------------------------Ben-----------------------------------------*/
 #worldIsWonderful {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 #worldIsWonderful img{
@@ -221,7 +221,7 @@ span{
 }
 
 #worldIsWonderful h2{
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 @media all and (min-width: 768px) and (min-device-width : 500px) {
@@ -239,7 +239,7 @@ span{
 
     #worldIsWonderful h2{
         font-size: 1.8em;
-        padding-left : 20px;
+        padding-left : 4%;
         padding-bottom: 20px;
         text-align: left;
     }
@@ -347,7 +347,8 @@ span{
     #services, #localisation {
         display: inline-block;
         vertical-align: top; /* alignement vertical en partant du haut de l'écran */
-        width: 49%; /* nouveau dimentionnement */
+        width: 46%; /* nouveau dimentionnement */
+        margin: auto;
     }
 
     /*redimentionnement taille des titres */
@@ -502,7 +503,7 @@ span{
     #contact h2 {
         font-size: 1.8em;
         text-align: left; 
-        padding-left: 20px;
+        padding-left: 4%;
     }
 
     /* transformation des zones de commentaires en inline block pour mise en page cote à cote */
