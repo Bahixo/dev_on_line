@@ -6,7 +6,7 @@ function ratioSlide(){
     $("#slide div").css("height", hSlide);
 }
 
-//------------------------------------------Fonction du slide permettant le changement d'image toute les 10 secondes
+//-----------------------------------------Fonction du slide permettant le changement d'image toute les 10 secondes
 let t=0;
 function sliding(){
     t++;
@@ -18,9 +18,10 @@ function sliding(){
     //$ (element).addClass("activ");//------------|
     $("#slide div").css("background-image", $(element).attr("data-pic"));
 }
+
 //------------------------------------------Fonction du menu burger présent en version mobile
 function menu(){
-    if(document.querySelector("body").offsetWidth<768){
+    if(document.querySelector("body").offsetWidth<768 || screen.width<500){
         if($(".menuB").css("visibility")==="hidden"){
             $(".menuB").css("visibility","visible");
             $("#menuPic").css("background-color", "#7aa6cf");
