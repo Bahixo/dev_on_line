@@ -1,4 +1,4 @@
-body, body *{
+body{
     background-color: #f8f8f8;
     display: block;
     text-align: center;
@@ -30,4 +30,25 @@ h2{
 nav{
     font-family: "Marck Script", cursive;
     color: white;
+}
+
+
+script{
+    display: hide;
+}
+
+.pair{
+    background-color: #f4f5ff;
+}
+
+.impair{
+    background-color: #ede6fa;
+}
+
+@media all and (min-width: 768px) and (min-device-width : 500px) {
+
+	body {
+		max-width: 1200px;
+		margin : 0 auto;
+	}
 }
