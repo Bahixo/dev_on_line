@@ -63,7 +63,7 @@
     /*--Modif du Header&Menu--*/
     header{
         max-width: 1200px;
-        top: 0px;
+        top: 5px;
         position: sticky;
         background-color: #7aa6cf;
         padding: 15px 5%;
