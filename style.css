@@ -225,10 +225,14 @@ background-color: #ceecfd; /*couleur de fond*/
     min-width: 350px;
 }
 
+#servicesAndLocalisation {
+    padding-top: 30px;
+}
+
 #containerCard {
     width: 70%;
-    height: 480px;
-    margin: 60px auto;
+    height: 500px;
+    margin: 40px auto;
 
     /*initialisation de display flex pour la mise en forme/disposition aisée des 'card' */
     display: flex;
@@ -239,12 +243,12 @@ background-color: #ceecfd; /*couleur de fond*/
 /* création du modèle visuel commun à chaque carte*/
 .card {
     width: 100%;
-    min-width: 450px;
+    min-width: 400px;
     height: 120px;
     margin: 0 auto;
     border: 5px solid #7aa6cf;
     border-radius: 10px;
-    font-size: 1.8em;
+    font-size: 2.2em;
 
     /*initialisation de display flex pour la mise en forme/disposition aisée du texte à l'intérieur de chaque 'card' */
     display: flex;
@@ -267,27 +271,35 @@ background-color: #ceecfd; /*couleur de fond*/
 /*--------------Sub-section Localisation ------------------*/
 
 /*lien de l'adresse écrite*/
+#localisation {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
 #localisation #addressText {
-    font-size: 1.6em;
-    width: 60%;
-    min-width: 500px;
+    display: block;
+    width: 75%;
     margin: 30px auto;
     color: #6c6c6e;
+    font-size: 1.8em;
     text-decoration: none;
 }
 
 /*lien de l'image GPS */
-#localisation a {
+#localisation a #gps {
     width: 65%;
-    min-width: 500px;
+    min-width: 300px;
     margin: 0 auto;
     padding: 0; 
 }
 
 /*image GPS */
 #localisation img {
-    width: 100%;
-    margin: 0 auto 60px; /* haut - gauche & droite - bas */
+    display: block;
+    width: 80%;
+    min-width: 300px;
+    margin: 0 auto; /* haut - gauche & droite - bas */
     border: 2px solid black;
     border-radius: 25px;
 }
@@ -310,7 +322,8 @@ background-color: #ceecfd; /*couleur de fond*/
     #services, #localisation {
         display: inline-block;
         vertical-align: top; /* alignement vertical en partant du haut de l'écran */
-        width: 49%; /* nouveau dimentionnement */
+        width: 46%; /* nouveau dimentionnement */
+        margin: auto;
     }
 
     /*redimentionnement taille des titres */
@@ -345,7 +358,7 @@ background-color: #ceecfd; /*couleur de fond*/
     /* redimentionnement taille de l'image GPS */
     #localisation a {
         width: 80%;
-        min-width: 350px;
+        min-width: 250px;
     }
 }
 
@@ -354,7 +367,8 @@ background-color: #ceecfd; /*couleur de fond*/
 /*--------------Section Contact Me ------------------*/
 /*--------------Sub-section Form ------------------*/
 #contact {
-    margin-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
 
 
@@ -366,6 +380,7 @@ background-color: #ceecfd; /*couleur de fond*/
 
 /* propriété générale de formulaires */
 #viewerName, #viewerMail, #commentArea {
+    display: block;
     margin-left: 5%;
     margin-top: 10px;
     border: 3px solid #57555b;
@@ -380,19 +395,20 @@ background-color: #ceecfd; /*couleur de fond*/
 /* propriétés exclusives aux formulaires 'name' et 'e-mail' */
 #viewerName, #viewerMail {
     width: 50%;
-    min-width: 400px;
+    min-width: 300px;
     height: 60px;
 }
 
 /* propriétés exclusives au formulaire 'comments' */
 #commentArea {
     width: 90%;
-    min-width: 500px;
+    min-width: 350px;
     height: 180px;
     margin-top: 30px; /* extra margin */
 }
 
 #submitButton {
+    display: block;
     width: 15%;
     min-width: 130px;
     height: auto;
@@ -462,7 +478,7 @@ background-color: #ceecfd; /*couleur de fond*/
     #contact h2 {
         font-size: 1.8em;
         text-align: left; 
-        margin-left: 20px;
+        padding-left: 4%;
     }
 
     /* transformation des zones de commentaires en inline block pour mise en page cote à cote */
@@ -501,7 +517,7 @@ background-color: #ceecfd; /*couleur de fond*/
 
     /* repositionnement du bouton submit */
     #submitButton {
-        margin-left: 25px;
+        margin-left: 4.2%;
         margin-bottom: -50px;
         position: relative;
         bottom: 100px;
@@ -520,8 +536,6 @@ background-color: #ceecfd; /*couleur de fond*/
         font-size: 1.6em;
     }
 }
-
-
 
 /*-------------- Footer ------------------*/
 
