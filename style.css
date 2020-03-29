@@ -43,43 +43,33 @@ background-color: #ceecfd; /*couleur de fond*/
 /*et sur pc*/
 
 @media all and (min-width: 768px) and (min-device-width : 500px){
+    #presentation *{
 
-#presentation *{
+    display: inline-block;
 
-display: inline-block;
+    }
 
-}
-
- 
-#presentation article, aside {
-
-vertical-align: top; 
-
-box-sizing: border-box; 
-
-padding: 0 10px;
-
-}
+    
+    #presentation article, aside {
+        vertical-align: top; 
+        box-sizing: border-box; 
+        padding: 0 10px;
+    }
 
 
-#presentation article {
-
-width: 66%; 
-
-}
+    #presentation article {
+    width: 66%; 
+    }
 
 
-#presentation aside
+    #presentation aside{
+    width: 33%; 
+    }
 
-{
-
-width: 33%; 
-
-}
-
-h1{
-	text-align: left;
-	margin-left: 20px;
+    h1{
+        text-align: left;
+        margin-left: 20px;
+    }
 }
  /*----------------------------------------------Joel*/ 
 #profilPic{
@@ -187,6 +177,7 @@ nav a{
     #bandLogo{
         margin-top: 105px;
     }
+}
 /*-----------------------------------------------------------Max*/
 #servicesAndLocalisation h2, #contact h2, #contact h3 {
     min-width: 350px;
