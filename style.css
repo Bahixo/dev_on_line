@@ -62,11 +62,9 @@
 
     /*--Modif du Header&Menu--*/
     header{
-        top: 0;
-        left:0;
-        right:0;
-        display: inline-block;
-        position: fixed;
+        max-width: 1200px;
+        top: 0px;
+        position: sticky;
         background-color: #7aa6cf;
         padding: 15px 5%;
         box-shadow: 5px 5px 5px grey;
@@ -111,7 +109,7 @@
     } 
 
     #bandLogo{
-        margin-top: 105px;
+        margin-top: 10px;
     }
 }
 
