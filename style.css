@@ -1,32 +1,44 @@
 /*mise en page partie About me*/
 
-article{
+h1{
+	font-size: 2em;
+}
+
+span{
+	color: #fbb714;
+	display: inline;
+	font-family: 'Merienda', cursive;
+}
+
+#presentation article{
 	width: 90%; /*largeur*/
 	margin: auto;
 	margin-bottom: 20px; /*espace entre les blocks*/
 }
 
-aside{
+#presentation aside{
 	width: 90%;
 	margin: auto;
 	background-color: #ceecfd; /*couleur de fond*/
 }
 
-aside, aside *{
+#presentation aside, #presentation aside *{
 
 background-color: #ceecfd; /*couleur de fond*/
 
 }
 
-p{
+#presentation p{
 	margin-top: 30px; /*espace entre les blocks*/
 	text-align: justify;
 	font-size: 1em /*réduction de la police*/
 }
 
-h2{
+#presentation h2{
 	margin-top: 30px; /*espace vertical haut*/
+	font-size: 1.2em;
 }
+
 
 /*et sur pc*/
 
@@ -39,7 +51,7 @@ display: inline-block;
 }
 
  
-article, aside {
+#presentation article, aside {
 
 vertical-align: top; 
 
@@ -49,22 +61,26 @@ padding: 0 10px;
 
 }
 
- 
 
-article {
+#presentation article {
 
 width: 66%; 
 
 }
 
- 
 
-aside
+#presentation aside
 
 {
 
 width: 33%; 
 
+}
+
+h1{
+	font-size: 2em;
+	text-align: left;
+	margin-left: 20px;
 }
 
 }
