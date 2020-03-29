@@ -1,109 +1,7 @@
-/*--------------------------------------------------------------------Ben-----------------------------------------*/
-#worldIsWonderful img{
-    width: 90%;
-    display: initial;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-#worldIsWonderful div{
-    margin-bottom: 50px;
-    margin-top: 20px;
-}
-
-#worldIsWonderful h3{
-    font-family: 'Brush Script MT','Merienda', 'Arial';
-    font-size: 2.8em;
-}
-
-#worldIsWonderful h2{
-    margin-bottom: 30px;
-}
-
-@media all and (min-width: 768px) and (min-device-width : 500px) {
-    
-    #worldIsWonderful img{
-        max-width: 25%;
-        }
-
-}
-/*--------------------------------------------------------------------------------Jen--------------------------------------*/
-/*mise en page partie About me*/
-
-h1{
-	font-size: 2em;
-}
-
-span{
-	color: #fbb714;
-	display: inline;
-	font-family: 'Merienda', cursive;
-}
-
-#presentation article{
-	width: 90%; /*largeur*/
-	margin: auto;
-	margin-bottom: 20px; /*espace entre les blocks*/
-}
-
-#presentation aside{
-	width: 90%;
-	margin: auto;
-	background-color: #ceecfd; /*couleur de fond*/
-}
-
-#presentation aside, #presentation aside *{
-
-background-color: #ceecfd; /*couleur de fond*/
-
-}
-
-#presentation p{
-	margin-top: 30px; /*espace entre les blocks*/
-	text-align: justify;
-	font-size: 1em /*réduction de la police*/
-}
-
-#presentation h2{
-	margin-top: 30px; /*espace vertical haut*/
-	font-size: 1.2em;
-}
-
-
-/*et sur pc*/
-
-@media all and (min-width: 768px) and (min-device-width : 500px){
-    #presentation *{
-
-    display: inline-block;
-
-    }
-
-    
-    #presentation article, aside {
-        vertical-align: top; 
-        box-sizing: border-box; 
-        padding: 0 10px;
-    }
-
-
-    #presentation article {
-    width: 66%; 
-    }
-
-
-    #presentation aside{
-    width: 33%; 
-    }
-
-    h1{
-        text-align: left;
-        margin-left: 20px;
-    }
-}
- /*----------------------------------------------Joel*/ 
+ /*-------------------------------------------Joel-------------------------------*/ 
 #profilPic{
     width: 30%;
+    margin-top: 30px;
     border-radius: 50%;
     border: solid 2px #c24595;
 }
@@ -174,28 +72,29 @@ nav a{
         width: 100%;
     }
 
-     #menuPic{
+    #menuPic{
          visibility: hidden;
-     }
+    }
 
-     .menuB{
-         width: auto;
-         visibility: visible;
-         box-shadow: initial;
-         display: inline-flex;
-         border: initial;
-         position: initial;
-         top: initial;
-         right: initial;
-         background: transparent;
-         font-size: 30px;
-         margin: 10px;
-     }
+    .menuB{
+        width: auto;
+        visibility: visible;
+        box-shadow: initial;
+        display: inline-flex;
+        border: initial;
+        position: initial;
+        top: initial;
+        right: initial;
+        background: transparent;
+        font-size: 30px;
+        margin: 10px;
+    }
 
-     #profilPic{
+    #profilPic{
         display: inline-block;
         width: 20%;
         min-width: 150px;
+        margin-top: 0px;
     }
      
      #logo{
@@ -208,15 +107,157 @@ nav a{
         margin-top: 105px;
     }
 }
-/*-----------------------------------------------------------Max*/
+
+/*-----------------------------------------------------Jen--------------------------------------*/
+/*mise en page partie About me*/
+
+h1{
+    font-size: 1.5em;
+    padding-top: 30px;
+}
+
+span{
+	color: #fbb714;
+	display: inline;
+	font-family: 'Merienda', cursive;
+}
+
+#presentation h2 {
+    padding-top: 30px; /*espace vertical haut*/
+}
+
+#presentation p{
+	margin-top: 30px; /*espace entre les blocks*/
+	text-align: justify;
+	font-size: 0.9em /*réduction de la police*/
+}
+
+#presentation article{
+	width: 90%; /*largeur*/
+	margin: auto;
+	margin-bottom: 20px; /*espace entre les blocks*/
+}
+
+#presentation aside{
+	width: 90%;
+	margin: auto;
+    background-color: #ceecfd; /*couleur de fond*/
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+
+#presentation aside h2 {
+    font-size: 1.5em; /*espace vertical haut*/
+}
+
+#presentation aside, #presentation aside *{
+    background-color: #ceecfd; /*couleur de fond*/
+}
+
+/*règles desktop*/
+@media all and (min-width: 768px) and (min-device-width : 500px){
+
+    h1{
+        text-align: left;
+        padding-left: 20px;
+        padding-bottom: 30px;
+        font-size: 3em;
+        min-width: 800px;
+    }
+
+    #presentation {
+        padding-bottom: 30px;
+    }
+    
+    #presentation *{
+    display: inline-block;
+    }
+
+    #presentation article h2 {
+        display: block;
+        font-size: 1.8em;
+        text-align: left;
+    }
+
+    #presentation article, #presentation aside {
+        vertical-align: top; 
+        box-sizing: border-box; 
+        padding: 0 10px;
+    }
+
+    #presentation article {
+    width: 66%; 
+    }
+
+    #presentation aside{
+    width: 33%; 
+    }
+
+    #presentation p {
+        font-size: 1.4em;
+    }
+}
+
+/*--------------------------------------------------------------------Ben-----------------------------------------*/
+#worldIsWonderful {
+    padding-top: 50px;
+}
+
+#worldIsWonderful img{
+    width: 90%;
+    display: initial;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#worldIsWonderful div{
+    padding-bottom: 50px;
+    margin-top: 20px;
+}
+
+#worldIsWonderful h3{
+    font-family: 'Brush Script MT','Merienda', 'Arial';
+    font-size: 2.8em;
+}
+
+#worldIsWonderful h2{
+    margin-bottom: 30px;
+}
+
+@media all and (min-width: 768px) and (min-device-width : 500px) {
+
+     #portrait, #nature, #art{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #worldIsWonderful img{
+        width: 32%;
+    }    
+
+    #worldIsWonderful h2{
+        font-size: 1.8em;
+        padding-left : 20px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+}
+
+/*-----------------------------------------------------------Max-----------------------------------------------------*/
 #servicesAndLocalisation h2, #contact h2, #contact h3 {
     min-width: 350px;
 }
 
+#servicesAndLocalisation {
+    padding-top: 30px;
+}
+
 #containerCard {
     width: 70%;
-    height: 480px;
-    margin: 60px auto;
+    height: 500px;
+    margin: 40px auto;
 
     /*initialisation de display flex pour la mise en forme/disposition aisée des 'card' */
     display: flex;
@@ -227,12 +268,12 @@ nav a{
 /* création du modèle visuel commun à chaque carte*/
 .card {
     width: 100%;
-    min-width: 450px;
+    min-width: 400px;
     height: 120px;
     margin: 0 auto;
     border: 5px solid #7aa6cf;
     border-radius: 10px;
-    font-size: 1.8em;
+    font-size: 2.2em;
 
     /*initialisation de display flex pour la mise en forme/disposition aisée du texte à l'intérieur de chaque 'card' */
     display: flex;
@@ -255,27 +296,35 @@ nav a{
 /*--------------Sub-section Localisation ------------------*/
 
 /*lien de l'adresse écrite*/
+#localisation {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
 #localisation #addressText {
-    font-size: 1.6em;
-    width: 60%;
-    min-width: 500px;
+    display: block;
+    width: 75%;
     margin: 30px auto;
     color: #6c6c6e;
+    font-size: 1.8em;
     text-decoration: none;
 }
 
 /*lien de l'image GPS */
-#localisation a {
+#localisation a #gps {
     width: 65%;
-    min-width: 500px;
+    min-width: 300px;
     margin: 0 auto;
     padding: 0; 
 }
 
 /*image GPS */
 #localisation img {
-    width: 100%;
-    margin: 0 auto 60px; /* haut - gauche & droite - bas */
+    display: block;
+    width: 80%;
+    min-width: 300px;
+    margin: 0 auto; /* haut - gauche & droite - bas */
     border: 2px solid black;
     border-radius: 25px;
 }
@@ -333,7 +382,7 @@ nav a{
     /* redimentionnement taille de l'image GPS */
     #localisation a {
         width: 80%;
-        min-width: 350px;
+        min-width: 250px;
     }
 }
 
@@ -342,7 +391,8 @@ nav a{
 /*--------------Section Contact Me ------------------*/
 /*--------------Sub-section Form ------------------*/
 #contact {
-    margin-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
 
 
@@ -354,6 +404,7 @@ nav a{
 
 /* propriété générale de formulaires */
 #viewerName, #viewerMail, #commentArea {
+    display: block;
     margin-left: 5%;
     margin-top: 10px;
     border: 3px solid #57555b;
@@ -368,19 +419,20 @@ nav a{
 /* propriétés exclusives aux formulaires 'name' et 'e-mail' */
 #viewerName, #viewerMail {
     width: 50%;
-    min-width: 400px;
+    min-width: 300px;
     height: 60px;
 }
 
 /* propriétés exclusives au formulaire 'comments' */
 #commentArea {
     width: 90%;
-    min-width: 500px;
+    min-width: 350px;
     height: 180px;
     margin-top: 30px; /* extra margin */
 }
 
 #submitButton {
+    display: block;
     width: 15%;
     min-width: 130px;
     height: auto;
@@ -450,7 +502,7 @@ nav a{
     #contact h2 {
         font-size: 1.8em;
         text-align: left; 
-        margin-left: 20px;
+        padding-left: 20px;
     }
 
     /* transformation des zones de commentaires en inline block pour mise en page cote à cote */
@@ -489,7 +541,7 @@ nav a{
 
     /* repositionnement du bouton submit */
     #submitButton {
-        margin-left: 25px;
+        margin-left: 4.2%;
         margin-bottom: -50px;
         position: relative;
         bottom: 100px;
@@ -508,8 +560,6 @@ nav a{
         font-size: 1.6em;
     }
 }
-
-
 
 /*-------------- Footer ------------------*/
 
