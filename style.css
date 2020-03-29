@@ -1,0 +1,354 @@
+#servicesAndLocalisation h2, #contact h2, #contact h3 {
+    min-width: 350px;
+}
+
+#containerCard {
+    width: 70%;
+    height: 480px;
+    margin: 60px auto;
+
+    /*initialisation de display flex pour la mise en forme/disposition aisée des 'card' */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* création du modèle visuel commun à chaque carte*/
+.card {
+    width: 100%;
+    min-width: 450px;
+    height: 120px;
+    margin: 0 auto;
+    border: 5px solid #7aa6cf;
+    border-radius: 10px;
+    font-size: 1.8em;
+
+    /*initialisation de display flex pour la mise en forme/disposition aisée du texte à l'intérieur de chaque 'card' */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* taille spécifique pour la première carte */
+#card1 {
+    height: 180px;
+}
+
+/* lien "library" */
+.card a { 
+    display: initial; /* réinitialise le display block pour que le lien soit à la suite du texte */
+    text-decoration: none;
+    color: #c24595;
+}
+
+/*--------------Sub-section Localisation ------------------*/
+
+/*lien de l'adresse écrite*/
+#localisation #addressText {
+    font-size: 1.6em;
+    width: 60%;
+    min-width: 500px;
+    margin: 30px auto;
+    color: #6c6c6e;
+    text-decoration: none;
+}
+
+/*lien de l'image GPS */
+#localisation a {
+    width: 65%;
+    min-width: 500px;
+    margin: 0 auto;
+    padding: 0; 
+}
+
+/*image GPS */
+#localisation img {
+    width: 100%;
+    margin: 0 auto 60px; /* haut - gauche & droite - bas */
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+/* uniquement quand la fenêtre d'un navigateur est inférieure à 400px */
+@media all and (max-width: 400px) {
+    #servicesAndLocalisation *, #contact * {
+        margin-left: 10px;
+    }
+}
+    
+/* règles applicables pour tablettes & desktop pour la section 'services & localisation */
+@media all and (min-width: 768px) and (min-device-width : 500px) {
+    /* redimentionnement valeurs minimales pour tout élément de la section 'services & localisation' */
+    #servicesAndLocalisation *{
+        min-width: 200px;
+    }
+
+    /* passage en display : inline-block pour mise cote à cote des deux sous-sections 'services' & 'localisation' */
+    #services, #localisation {
+        display: inline-block;
+        vertical-align: top; /* alignement vertical en partant du haut de l'écran */
+        width: 49%; /* nouveau dimentionnement */
+    }
+
+    /*redimentionnement taille des titres */
+    #servicesAndLocalisation h2 {
+        font-size: 1.8em; 
+    }
+
+    #services h2 {
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    /* réduction de la marge du conteneur des 'card's */
+    #containerCard {
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+
+    /* redimentionnement largeur et taille du contenu des 'card's */
+    .card {
+        width: 100%;
+        font-size: 1.4em;
+    }
+
+    /* redimentionnement taille de l'adresse */
+    #localisation #addressText {
+        font-size: 1.3em;
+        min-width: 200px;
+        width: 80%;
+    }
+
+    /* redimentionnement taille de l'image GPS */
+    #localisation a {
+        width: 80%;
+        min-width: 350px;
+    }
+}
+
+
+
+/*--------------Section Contact Me ------------------*/
+/*--------------Sub-section Form ------------------*/
+#contact {
+    margin-bottom: 60px;
+}
+
+
+#contact h3 {
+    font-family: 'Brush Script MT','Merienda', 'Arial';
+    font-size: 2.8em;
+    margin: 20px auto;
+}
+
+/* propriété générale de formulaires */
+#viewerName, #viewerMail, #commentArea {
+    margin-left: 5%;
+    margin-top: 10px;
+    border: 3px solid #57555b;
+    border-radius: 10px;
+
+    font-size: 1.8em;
+    text-align: left;
+    padding-left: 2.5%;
+    box-sizing: border-box;
+}
+
+/* propriétés exclusives aux formulaires 'name' et 'e-mail' */
+#viewerName, #viewerMail {
+    width: 50%;
+    min-width: 400px;
+    height: 60px;
+}
+
+/* propriétés exclusives au formulaire 'comments' */
+#commentArea {
+    width: 90%;
+    min-width: 500px;
+    height: 180px;
+    margin-top: 30px; /* extra margin */
+}
+
+#submitButton {
+    width: 15%;
+    min-width: 130px;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 3px solid #c24595;
+    border-radius: 10px;
+
+    font-size: 1.8em;
+    background-color: #7aa6cf;
+    color: white;
+}
+
+/*--------------Sub-section addresses & social medias ------------------*/
+
+#addressAndSocialMedia {
+    min-width: 600px;
+}
+
+.addressContainer, #thumbsAndSocialMediaContainer {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.addressContainer a {
+    font-size: 1.8em;
+    margin-left: 5%;
+    
+    position: relative;
+    top: 10px;
+
+    color: black;
+    text-decoration: none;
+}
+
+/* ajustement de la taille des logos mail, tel et thumbs*/
+.smallLogo {
+    width: 50px;
+    height: auto;
+    margin-left: 5%;
+}
+
+/* ajustement de la taille du lien des logos de réseaux-sociaux */
+.linkLogo {
+    width: 25px;
+}
+
+/* mise en forme des logos de réseaux-sociaux via flex*/
+#socialMediaContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    min-width: 300px;
+}
+
+/* adaptation taille des logos de réseaux-sociaux après réduction du conteneur de ces logos */
+.socialMediaLogo {
+    width: 200%;
+}
+
+@media all and (min-width: 768px) and (min-device-width : 500px) {
+    
+    /* redimentionnement des tailles des titres */
+    #contact h2 {
+        font-size: 1.8em;
+        text-align: left; 
+        margin-left: 20px;
+    }
+
+    /* transformation des zones de commentaires en inline block pour mise en page cote à cote */
+    #nameAndMailForm, #commentArea {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #viewerName, #viewerMail, #commentArea {
+        min-width: 200px;
+        margin-left: 0;
+        margin-top: 0;
+        font-size: 1.4em;
+        padding-top: 8px;
+    }
+
+    /* redimentionnement taille des formulaires name & mail */
+    #viewerName, #viewerMail {
+        width: 90%;
+        margin-left: 20px;
+        
+    }
+
+    #viewerMail {
+        margin-top: 10px;
+    }
+
+    #nameAndMailForm {
+        width: 30%;
+    }
+
+    #commentArea {
+        width: 65%;
+        height: 250px;
+    }
+
+    /* repositionnement du bouton submit */
+    #submitButton {
+        margin-left: 25px;
+        margin-bottom: -50px;
+        position: relative;
+        bottom: 100px;
+    }
+
+    #socialMediaContainer {
+        width: 25%;
+        min-width: 300px;
+        justify-content: space-between;
+        position: relative;
+        left: 4.7%;
+    }
+
+    /* reditionnement taille texte de l'adresse mail et du numéro de tél*/
+    .addressContainer a {
+        font-size: 1.6em;
+    }
+}
+
+
+
+/*-------------- Footer ------------------*/
+
+/*application du background, de la couleur de texte et de la police 'Arial' pour l'ensemble des éléments du footer */
+footer *{
+    background-color: #4a4a4a;
+    color: white;
+    font-family: 'Arial';
+}
+
+/* gestion de la disposition des éléments du footer via display */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    min-width: 640px;
+}
+
+footer div {
+    width: 28%;
+    margin-bottom: 20px;
+}
+
+/* ajustement spécifique du premier block du footer 'About photography' */
+footer div:first-child {
+    width: 35%;
+    margin-left: 2%;
+}
+
+/* ajustement spécifique du second block du footer 'Services' */
+footer div:nth-child(2) {
+    margin-left: 2%;
+}
+
+footer h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+/* Gestion de l'alignement à gauche directement via les paragraphes */
+footer p {
+    text-align: left;
+    line-height: 1.8em;
+}
+
+/* remise en display intial (normalize - display : block) des liens pour pouvoir rendre effectif le positionnement à gauche */ 
+footer a {
+    display: initial;
+    text-decoration: none;
+}
