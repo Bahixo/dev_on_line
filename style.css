@@ -1,0 +1,128 @@
+/*header{
+   position: fixed;
+   width: 80%;
+   display: flex;
+   background-color: #7aa6cf;
+   padding: 20px 10%;
+   justify-content: space-between;
+}
+/*
+header nav{
+    background: transparent;
+    font-size: 30px;
+}
+
+#bandLogo{
+    padding-top: 80px;
+}
+*/
+
+/*---------------------------------------------------------------------------------------------------reset*/
+
+#profilPic{
+    width: 30%;
+    border-radius: 50%;
+    border: solid 2px #c24595;
+}
+
+nav a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: #7aa6cf;
+    display: inline-block;
+    height: auto;
+    width: 150px ;
+    padding: 5px 0px;
+    font-size: 25px;
+    position: fixed;
+    right: 10px;
+    border: 1px #c24595 solid;
+}
+
+#logo{
+    width: 80%;
+    position: center;
+} 
+
+#slide div{
+    background-image: url(src/elephant.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: linear 1s;
+}
+
+.menuB{
+    visibility: hidden;
+    box-shadow: 5px 5px 5px grey;    
+    text-shadow: 5px 5px 5px grey;
+}
+
+.menuB:hover{
+    color: #c24595;
+}
+
+#menuPic{
+    position: fixed;
+    width: 100px;
+    border-radius: 50%;
+    top: 20px;
+    right: 34px;
+}
+
+@media all and (min-width: 768px) and (min-device-width: 500px){
+    header{
+        top: 0;
+        left:0;
+        right:0;
+        display: inline-block;
+        position: fixed;
+        background-color: #7aa6cf;
+        padding: 15px 5%;
+        box-shadow: 5px 5px 5px grey;
+    }
+
+    header nav{
+        text-align: center;        
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+     #menuPic{
+         visibility: hidden;
+     }
+
+     .menuB{
+         width: auto;
+         visibility: visible;
+         box-shadow: initial;
+         display: inline-flex;
+         border: initial;
+         position: initial;
+         top: initial;
+         right: initial;
+         background: transparent;
+         font-size: 30px;
+         margin: 10px;
+     }
+
+     #profilPic{
+        display: inline-block;
+        width: 20%;
+        min-width: 150px;
+    }
+     
+     #logo{
+        display: inline-block;
+        position: right;
+        width: 72%;
+    } 
+
+    #bandLogo{
+        margin-top: 105px;
+    }
+
+}
