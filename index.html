@@ -3,9 +3,9 @@
     <head>
         <title>Anna Smith - Photography</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
+        <meta name="viewport" content="" width="device-width" initial-scale="1.0" maximum-scale="3.0"/>
         <link href="https://fonts.googleapis.com/css?family=Marck+Script|Merienda&display=swap" rel="stylesheet">
-       <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script type="text/javascript" src="js/jquery.min.js"> </script>
         <script type="text/javascript" src="js/script.js"></script>
@@ -36,13 +36,112 @@
             <span id="4" id="mountain" data-pic="url(src/mountain.jpg)"></span>
             <span id="5" id="newyork" data-pic="url(src/new_york.jpg)"></span>
         </section>
+ 
+        <!-- Services & prices AND localisation area-->
+        <section id="servicesAndLocalisation">
+            <!-- services & prices sub-area-->
+            <article id="services">
+                <h2>£. Services & prices</h2>
+                <div id="containerCard">
+                    <div class="card" id="card1">
+                        <h3>Buy a photography</h3>
+                        <p>
+                            from my <a href="#">library</a><br/>
+                            only made for you
+                        </p>
+                        <p>£. According to estimate</p>
+                    </div>
+                    <div class="card">
+                        <h3>Shooting in London</h3>
+                        <p>200 £ by hour</p>
+                    </div>
+                    <div class="card">
+                        <h3>Event in England</h3>
+                        <p>700 £ by half-day</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- localisation sub-area-->
+            <article id="localisation">
+                <h2>Localisation</h2>
+                <a href="https://www.google.fr/maps/place/38+Mount+Pleasant,+Holborn,+London+WC1X+0AN,+Royaume-Uni/@51.5223716,-0.1154025,17z/data=!3m1!4b1!4m5!3m4!
+                        1s0x48761b4918f9dacb:0x633a59c29b7749b2!8m2!3d51.5223716!4d-0.1132138" id="addressText">38 Mount Pleasant, Holborn, London WC1X 0AN, United Kingdom</a>
+                <a href="https://www.google.fr/maps/place/38+Mount+Pleasant,+Holborn,+London+WC1X+0AN,+Royaume-Uni/@51.5223716,-0.1154025,17z/data=!3m1!4b1!4m5!3m4!
+                        1s0x48761b4918f9dacb:0x633a59c29b7749b2!8m2!3d51.5223716!4d-0.1132138"><img src="src/map.PNG" alt="GPS area"></a>
+            </article>
+        </section>
+            
+        <!-- contact area-->
+        <section id="contact">
+            <h2>One project ? Contact me</h2>
+
+            <!-- form sub-area-->
+            <div>
+                <h3>Leave a comment ...</h3>
+                <form method="post" action="traitement.php">
+                    <!-- name, email and comment areas -->
+                    <div id="nameAndMailForm">
+                        <input type="text" name="viewerName" id="viewerName" placeholder="my name" maxlength="15" required/></p>
+                        <input type="email" name="viewerMail" id="viewerMail" placeholder="my@email" maxlength="40" required/></p>
+                    </div>
+                    <textarea name="commentArea" id="commentArea" placeholder="Comment here" maxlength="500" required></textarea></p>
+                    <input type="submit" value="Submit" id="submitButton"/>
+                </form>
+            </div>
+
+            <!-- addresses & social medias sub-area-->
+            <div id="addressAndSocialMedia">
+                <h3>... or contact me at</h3>
+                <div class="addressContainer"> <!-- clickable mail -->
+                    <img src="src/at.png" alt="mail logo" class="smallLogo">
+                    <a href="mailto:anna.smith-photography.gmail.com"> anna.smith-photography.gmail.com </a>
+                </div>
+                <div class="addressContainer"> <!-- clickable tel-->
+                    <img src="src/phone_record.png" alt="phone logo" class="smallLogo">
+                    <a href="tel:0670566929">06. 70. 56. 69. 29</a>
+                </div>
+                <div id="thumbsAndSocialMediaContainer"> <!-- Social medias logos all clickable-->
+                    <img src="src/thumbs_up.png" alt="thumbs up logo" class="smallLogo">
+                    <div id="socialMediaContainer">
+                        <a href="#" class="linkLogo"><img src="src/instagram.png" alt="instagram logo" class="socialMediaLogo"></a>
+                        <a href="#" class="linkLogo"><img src="src/twitter.png" alt="tweeter logo" class="socialMediaLogo"></a>
+                        <a href="#" class="linkLogo"><img src="src/facebook.png" alt="facebook logo" class="socialMediaLogo"></a>
+                        <a href="#" class="linkLogo"><img src="src/linkedin.png" alt="linkedIn logo" class="socialMediaLogo"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <h2>About photography</h2>
+                <!-- encapsulation des liens dans des parapraphes pour ajuster la zone clickable au texte des liens-->
+                <p><a href="#">Tips</a></p>
+                <p><a href="#">My Equipment</a></p>
+                <p><a href="#">FAQ</a></p>
+            </div>
+            <div>
+                <h2>Services</h2>
+                <p><a href="#">Buy a photography</a></p>
+                <p><a href="#">Shooting</a></p>
+               <p><a href="#">Event</a></p>
+            </div>
+            <div>
+                <h2>Legal content</h2>
+                <p><a href="#">Anna Smith Photography</a></p>
+                <p><a href="#">Condition of sales</a></p>
+                <p><a href="#">Credits</a></p>
+                <p><a href="#">ICO</a></p>
+            </div>
+        </footer>
+
         <script>
             $(document).ready(ratioSlide());
             setInterval(sliding, 10000);
             $("#menuPic").click(menu);
             $(".menuB").click(menu);
-        </script>
+        </script> 
+
     </body>
-
-
 </html>
