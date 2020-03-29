@@ -1,3 +1,87 @@
+/*mise en page partie About me*/
+
+h1{
+	font-size: 2em;
+}
+
+span{
+	color: #fbb714;
+	display: inline;
+	font-family: 'Merienda', cursive;
+}
+
+#presentation article{
+	width: 90%; /*largeur*/
+	margin: auto;
+	margin-bottom: 20px; /*espace entre les blocks*/
+}
+
+#presentation aside{
+	width: 90%;
+	margin: auto;
+	background-color: #ceecfd; /*couleur de fond*/
+}
+
+#presentation aside, #presentation aside *{
+
+background-color: #ceecfd; /*couleur de fond*/
+
+}
+
+#presentation p{
+	margin-top: 30px; /*espace entre les blocks*/
+	text-align: justify;
+	font-size: 1em /*réduction de la police*/
+}
+
+#presentation h2{
+	margin-top: 30px; /*espace vertical haut*/
+	font-size: 1.2em;
+}
+
+
+/*et sur pc*/
+
+@media all and (min-width: 768px) and (min-device-width : 500px){
+
+#presentation *{
+
+display: inline-block;
+
+}
+
+ 
+#presentation article, aside {
+
+vertical-align: top; 
+
+box-sizing: border-box; 
+
+padding: 0 10px;
+
+}
+
+
+#presentation article {
+
+width: 66%; 
+
+}
+
+
+#presentation aside
+
+{
+
+width: 33%; 
+
+}
+
+h1{
+	text-align: left;
+	margin-left: 20px;
+}
+ /*----------------------------------------------Joel*/ 
 #profilPic{
     width: 30%;
     border-radius: 50%;
@@ -103,7 +187,7 @@ nav a{
     #bandLogo{
         margin-top: 105px;
     }
-
+/*-----------------------------------------------------------Max*/
 #servicesAndLocalisation h2, #contact h2, #contact h3 {
     min-width: 350px;
 }
