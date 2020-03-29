@@ -113,17 +113,28 @@
     }
 }
 
-/*-------------------------------------------------------------------------------------------------------------------Jen--------------------------------------*/
+/*-----------------------------------------------------Jen--------------------------------------*/
 /*mise en page partie About me*/
 
 h1{
-	font-size: 2em;
+    font-size: 1.5em;
+    padding-top: 30px;
 }
 
 span{
 	color: #fbb714;
 	display: inline;
 	font-family: 'Merienda', cursive;
+}
+
+#presentation h2 {
+    padding-top: 30px; /*espace vertical haut*/
+}
+
+#presentation p{
+	margin-top: 30px; /*espace entre les blocks*/
+	text-align: justify;
+	font-size: 0.9em /*réduction de la police*/
 }
 
 #presentation article{
@@ -135,60 +146,68 @@ span{
 #presentation aside{
 	width: 90%;
 	margin: auto;
-	background-color: #ceecfd; /*couleur de fond*/
+    background-color: #ceecfd; /*couleur de fond*/
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+
+#presentation aside h2 {
+    font-size: 1.5em; /*espace vertical haut*/
 }
 
 #presentation aside, #presentation aside *{
-
-background-color: #ceecfd; /*couleur de fond*/
-
+    background-color: #ceecfd; /*couleur de fond*/
 }
 
-#presentation p{
-	margin-top: 30px; /*espace entre les blocks*/
-	text-align: justify;
-	font-size: 1em /*réduction de la police*/
-}
-
-#presentation h2{
-	margin-top: 30px; /*espace vertical haut*/
-	font-size: 1.2em;
-}
-
-
-/*et sur pc*/
-
+/*règles desktop*/
 @media all and (min-width: 768px) and (min-device-width : 500px){
-    #presentation *{
 
-    display: inline-block;
-
+    h1{
+        text-align: left;
+        padding-left: 4%;
+        padding-bottom: 30px;
+        font-size: 3em;
+        min-width: 800px;
     }
 
+    #presentation {
+        padding-bottom: 30px;
+    }
     
-    #presentation article, aside {
+    #presentation *{
+    display: inline-block;
+    }
+
+    #presentation article h2 {
+        display: block;
+        font-size: 1.8em;
+        text-align: left;
+    }
+
+    #presentation article, #presentation aside {
         vertical-align: top; 
         box-sizing: border-box; 
         padding: 0 10px;
     }
 
-
     #presentation article {
-    width: 66%; 
+    width: 62%; 
     }
-
 
     #presentation aside{
-    width: 33%; 
+    width: 31%; 
     }
 
-    h1{
-        text-align: left;
-        margin-left: 20px;
+    #presentation p {
+        font-size: 1.4em;
     }
 }
 
-/*-------------------------------------------------------------------------------------------------------Ben-----------------------------------------*/
+/*--------------------------------------------------------------------Ben-----------------------------------------*/
+#worldIsWonderful {
+    padding-top: 30px;
+}
+
 #worldIsWonderful img{
     width: 90%;
     display: initial;
@@ -197,7 +216,7 @@ background-color: #ceecfd; /*couleur de fond*/
 }
 
 #worldIsWonderful div{
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     margin-top: 20px;
 }
 
@@ -207,18 +226,31 @@ background-color: #ceecfd; /*couleur de fond*/
 }
 
 #worldIsWonderful h2{
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 @media all and (min-width: 768px) and (min-device-width : 500px) {
+
+     #portrait, #nature, #art{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
     
     #worldIsWonderful img{
-        max-width: 25%;
-        }
+        width: 32%;
+    }    
 
+    #worldIsWonderful h2{
+        font-size: 1.8em;
+        padding-left : 4%;
+        padding-bottom: 20px;
+        text-align: left;
+    }
 }
 
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------Max*/
+/*-----------------------------------------------------------Max-----------------------------------------------------*/
 #servicesAndLocalisation h2, #contact h2, #contact h3 {
     min-width: 350px;
 }
