@@ -257,6 +257,10 @@ span{
     min-width: 350px;
 }
 
+#servicesAndLocalisation h2 {
+    font-size: 3em;
+}
+
 #servicesAndLocalisation {
     padding-top: 30px;
 }
@@ -360,7 +364,7 @@ span{
 
     /*redimentionnement taille des titres */
     #servicesAndLocalisation h2 {
-        font-size: 1.8em; 
+        font-size: 2.2em; 
     }
 
     #services h2 {
